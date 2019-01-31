@@ -147,7 +147,7 @@ export default class PagerScroll<T: *> extends React.Component<
         horizontal
         pagingEnabled
         directionalLockEnabled
-        keyboardDismissMode="on-drag"
+        keyboardDismissMode="none"
         keyboardShouldPersistTaps="always"
         overScrollMode="never"
         scrollEnabled={this.props.swipeEnabled}
@@ -182,8 +182,8 @@ export default class PagerScroll<T: *> extends React.Component<
                 layout.width
                   ? { width: layout.width, overflow: 'hidden' }
                   : focused
-                    ? styles.page
-                    : null
+                  ? styles.page
+                  : null
               }
             >
               {focused || layout.width ? child : null}

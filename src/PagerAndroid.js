@@ -147,7 +147,7 @@ export default class PagerAndroid<T: *> extends React.Component<Props<T>> {
     return (
       <ViewPagerAndroid
         key={navigationState.routes.length}
-        keyboardDismissMode={keyboardDismissMode}
+        keyboardDismissMode="none"
         initialPage={initialPage}
         scrollEnabled={swipeEnabled !== false}
         onPageScroll={this._handlePageScroll}
